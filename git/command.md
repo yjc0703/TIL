@@ -74,3 +74,13 @@ git push origin <branch name>
 
 
 
+##### status
+
+git의 현재 상태를 확인하는 명령어
+
+- 사용법
+
+```bash
+git status
+```
+
