@@ -2,7 +2,7 @@
 
 > 기본 명령어를 정리합니다.
 
-![img](command.assets/featured.png)
+![img](flow.png)
 
 ##### init
 
