@@ -38,7 +38,7 @@ staging area 에 있는 파일들을 하나의 commit 으로 저장하는 명령
 git commit -m "message"
 ```
 
-- 가장 최근의 커밋 메시지 변경
+- 가장 최근의 커밋 변경. 메시지는 vim 으로 변경 가능하고 추가로 staging 된 파일도 포함된다.
 ```bash
 git commit --amend
 ```
