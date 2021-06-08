@@ -15,6 +15,7 @@
 
 
 2. 생성
+
    - array : 리스트를 배열로 생성
    - zeros : 0으로 채워진 배열 생성
    - ones : 1로 채워진 배열 생성
@@ -30,6 +31,7 @@
 
 
 3. indexing, slicing
+
    - list 사용법 참고
 
 
@@ -61,9 +63,14 @@
 
 7. broadcasting
 
+   - 연산을 위한 배열간 모양이 동일하지 않을 때 특정한 조건이 맞으면 자동으로 모양이 같게 만들어 연산하는 기능
+
 
 
 8. axis
+
+   - 다차원 배열을 연산할 때 기준 축
+   - 
 
 
 
@@ -72,5 +79,15 @@
    - reshape
    - resize
    - split
-   - stack
+   - stack : shape 의 크기를 증가시켜서 병합
+   - concatenate : 원래 shape 크기를 그대로 유지
+
+
+
+
+10. 그밖에
+
+   - where 
+      - 조건만 넣을 경우 True 인 index 를 반환한다.
+      - 참, 거짓인 경우에 대한 대체값을 넣을 수 있다
 
