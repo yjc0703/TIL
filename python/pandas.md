@@ -6,7 +6,32 @@
 
 1. 데이터 타입
    - Series : 1차원 데이터
+      - index : Series 에서 세로축 라벨
+      - values : 데이터
+      ```ptyhon
+      pd.Series([10, 20, 30, 40, 50])
+
+      out:
+      0    10
+      1    20
+      2    30
+      3    40
+      4    50
+      dtype: int64
+      ```
    - DataFrame : 2차원 데이터
+      - index : DataFrame 에서 세로축 라벨
+      - columns : 가로축 라벨
+      - values : 데이터
+      ```ptyhon
+      pd.DataFrame([[1,2,3],[4,5,6]])
+
+      out:
+      |      |  0   |  1   |  2   |
+      | ---- | ---- | ---- | ---- |
+      |  0   |  1   |  2   |  3   |
+      |  1   |  4   |  5   |  6   |
+      ```
 
 
 
