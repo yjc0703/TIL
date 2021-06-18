@@ -181,20 +181,58 @@
 
 
 
-8. axis
+8. axis *(추가공부 필요)*
 
    - 다차원 배열을 연산할 때 기준 축
    - 
 
 
 
-9. 배열의 조작
+9. 배열의 조작 *(추가공부 필요)*
 
-   - reshape
-   - resize
-   - split
+   - reshape : shape 을 조정
+      ```python
+      np.arange(12).reshape(3,4)
+   
+      out:
+      array([[ 0,  1,  2,  3],
+             [ 4,  5,  6,  7],
+             [ 8,  9, 10, 11]])
+      ```
+
+   - resize : reshape 와 비슷하지만 return 이 없고 shape 의 사이즈가 배열의 아이템 갯수와 맞지 않아도 됨
+      ```python
+      a = np.arange(12)
+      a.reshape(3,4)
+      a
+   
+      out:
+      array([[ 0,  1,  2,  3],
+             [ 4,  5,  6,  7],
+             [ 8,  9, 10, 11]])
+      ```
+      ```python
+      b = np.arange(12)
+      b.reshape(2,2)
+      b
+   
+      out:
+      array([[0, 1],
+             [2, 3]])
+      ```
+
+
+   - split : 배열을 분할
+      ```python
+      a = np.arange(12)
+      np.split(a, 3)
+
+      out:
+      [array([0, 1, 2, 3]), array([4, 5, 6, 7]), array([ 8,  9, 10, 11])]
+      ```
    - stack : shape 의 크기를 증가시켜서 병합
    - concatenate : 원래 shape 크기를 그대로 유지
+   -
 
 
 
@@ -204,4 +242,5 @@
    - where 
       - 조건만 넣을 경우 True 인 index 를 반환한다.
       - 참, 거짓인 경우에 대한 대체값을 넣을 수 있다
+   - newaxis
 
