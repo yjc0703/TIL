@@ -203,7 +203,7 @@
    - resize : reshape 와 비슷하지만 return 이 없고 shape 의 사이즈가 배열의 아이템 갯수와 맞지 않아도 됨
       ```python
       a = np.arange(12)
-      a.reshape(3,4)
+      a.resize(3,4)
       a
    
       out:
@@ -213,14 +213,13 @@
       ```
       ```python
       b = np.arange(12)
-      b.reshape(2,2)
+      b.resize(2,2)
       b
    
       out:
       array([[0, 1],
              [2, 3]])
       ```
-
 
    - split : 배열을 분할
       ```python
@@ -230,10 +229,59 @@
       out:
       [array([0, 1, 2, 3]), array([4, 5, 6, 7]), array([ 8,  9, 10, 11])]
       ```
-   - stack : shape 의 크기를 증가시켜서 병합
-   - concatenate : 원래 shape 크기를 그대로 유지
-   -
 
+   - stack : shape 의 크기를 증가시켜서 병합
+      ```python
+      a = np.arange(4)
+      b = np.arange(4, 8)
+      np.stack((a, b))
+
+      out:
+      array([[0, 1, 2, 3],
+             [4, 5, 6, 7]])
+      ```
+      ```python
+      a = np.arange(4)
+      b = np.arange(4, 8)
+      np.stack((a, b), axis = 1)
+
+      out:
+      array([[0, 4],
+             [1, 5],
+             [2, 6],
+             [3, 7]])
+      ```
+
+   - vstack : 
+      ```python
+      a = np.arange(4)
+      b = np.arange(4, 8)
+      np.vstack((a, b))
+
+      out:
+      array([[0, 1, 2, 3],
+             [4, 5, 6, 7]])
+      ```
+
+   - hstack : 
+      ```python
+      a = np.arange(4)
+      b = np.arange(4, 8)
+      np.hstack((a, b))
+
+      out:
+      array([0, 1, 2, 3, 4, 5, 6, 7])
+      ```
+
+   - concatenate : 원래 shape 크기를 그대로 유지
+      ```python
+      a = np.arange(4)
+      b = np.arange(4, 8)
+      np.concatenate((a, b))
+
+      out:
+      array([0, 1, 2, 3, 4, 5, 6, 7])
+      ```
 
 
 
