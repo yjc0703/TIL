@@ -58,3 +58,36 @@ python manage.py dbshell
 | -------- | ---------- | -------- |
 | model.py | views.py   | template |
 
+
+
+### EMAIL 모듈
+1. setting.py
+```python
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = '' # SMTP 서버 주소
+EMAIL_HOST_USER = '' # SMTP 사용자명
+EMAIL_HOST_PASSWORD = '' # SMTP 사용자 비밀번호
+EMAIL_PORT = 0 # SMTP 포트번호
+EMAIL_USE_TLS = True # TLS 프로토콜 사용여부
+DEFAULT_FROM_EMAIL = '' # 기본 이메일 발송 주소
+```
+
+
+
+
+2. 템플릿 처리
+```python
+from django.template.loader import render_to_string
+msg_html = render_to_string('이메일 템플릿 HTML 파일 위치', 템플릿 랜더링 데이터)
+```
+
+
+
+
+3. 발송
+``` python
+from django.core.mail import send_mail, EmailMessage
+msg = EmailMessage(subject = 제목, body=내용, bcc=수신자리스트)
+msg.content_subtype = 'html'
+msg.send()
+```
