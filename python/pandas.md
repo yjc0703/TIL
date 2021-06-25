@@ -4,6 +4,7 @@
 
 
 
+
 1. 데이터 타입
    - Series : 1차원 데이터
       - index : Series 에서 세로축 라벨
@@ -35,6 +36,8 @@
 
 
 
+
+
 2. 데이터 접근
    - iloc : 인덱스로 접근
    - loc : 인덱스 컬럼의 값으로 접근
@@ -51,13 +54,26 @@
 
 
 
+
+
 3. 컬럼 관리
    - 컬럼 추가 : dictionary 와 같음. 
    - 컬럼 삭제 : del
    - 컬럼 이름 변경 : rename
 
 
-   
-4. 그밖에
+
+
+
+4. 데이터 읽기
+   - read_excel : 엑셀 파일 읽기
+
+
+
+
+
+5. 그밖에
    - indexing, slicing 지원
    - boolean indexing, fancy indexing 지원
+
+
