@@ -91,3 +91,28 @@ msg = EmailMessage(subject = 제목, body=내용, bcc=수신자리스트)
 msg.content_subtype = 'html'
 msg.send()
 ```
+
+
+
+### 세션
+``` python 
+# set
+request.session[세션키] = ''
+
+# get
+request.session[세션키]
+```
+
+
+
+### 쿠키
+``` python 
+# set
+response.set_cookie('쿠키명', 쿠키값)
+
+# delete
+response.delete_cookie('쿠키명')
+
+# get
+request.COOKIES.get('쿠키명')
+```
