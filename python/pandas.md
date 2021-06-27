@@ -11,7 +11,7 @@
       - values : 데이터
       ```ptyhon
       pd.Series([10, 20, 30, 40, 50])
-
+      
       out:
       0    10
       1    20
@@ -26,7 +26,7 @@
       - values : 데이터
       ```ptyhon
       pd.DataFrame([[1,2,3],[4,5,6]])
-
+      
       out:
       |      |  0   |  1   |  2   |
       | ---- | ---- | ---- | ---- |
@@ -65,8 +65,9 @@
 
 
 
-4. 데이터 읽기
-   - read_excel : 엑셀 파일 읽기
+4. 데이터 가져오기, 내보내기
+
+![image-20210627151158668](pandas.assets/image-20210627151158668.png)
 
 
 
@@ -75,5 +76,4 @@
 5. 그밖에
    - indexing, slicing 지원
    - boolean indexing, fancy indexing 지원
-
 
