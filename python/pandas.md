@@ -72,8 +72,30 @@
 
 
 
+5. 데이터 필터
+   - Series 가져오기
+   ```python
+   data["Age"]
+   ```
 
-5. 그밖에
+   - DataFrame 가져오기(Fancy indexing)
+   ```python
+   data[["Age"]]
+   ```
+
+   - 대소비교 : 참 / 거짓
+   ```python
+   data['Age'] > 20
+   ```
+
+   - 대소비교 : DataFrame
+   ```python
+   data[data['Age'] > 20]
+   ```
+
+
+
+6. 그밖에
    - indexing, slicing 지원
    - boolean indexing, fancy indexing 지원
 
