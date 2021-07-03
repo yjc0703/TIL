@@ -55,3 +55,21 @@ element.send_keys('keys')
 # 클릭
 element.click()
 ```
+
+
+### 팝업 처리
+
+```python
+driver.switch_to.window(driver.window_handles[1]) # 새로생긴 첫번째 윈도우 팝업으로
+driver.close()                                    # 팝업 닫기
+
+driver.switch_to.window(driver.window_handles[0]) # 최초 윈도우로
+```
+
+
+
+### iframe 처리
+``` python
+driver.switch_to.frame('iframe') # iframe 선택
+driver.switch_to.parent_frame()  # 부모 프레임 선택
+```
