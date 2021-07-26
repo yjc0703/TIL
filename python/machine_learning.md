@@ -4,12 +4,7 @@
 ### 머신러닝 프로세스
 1. 데이터 로딩
 2. 데이터 탐색
-   - head
-   - tail
-   - info
-   - na
-   - value_counts
-   - datatype
+   - [pandas](./pandas.md) 사용
 2. 데이터 전처리
    - 데이터 분리
       - 홀드아웃
