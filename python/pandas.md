@@ -51,6 +51,9 @@
    - at : 인덱스 컬럼의 값으로 값을 조회
    - unique : row 의 중복제거 값 조회. 데이터 검증할 때 활용
    - describe : 기초적인 통계분석정보 제공
+   - na : null 데이터
+   - value_counts : 값 별로 갯수 확인
+   - datatype : 데이터 타입 확인
 
 
 
@@ -98,4 +101,3 @@
 6. 그밖에
    - indexing, slicing 지원
    - boolean indexing, fancy indexing 지원
-
