@@ -54,6 +54,7 @@
    - na : null 데이터
    - value_counts : 값 별로 갯수 확인
    - datatype : 데이터 타입 확인
+   - isna : null 값인지 확인(True, False 로 표시)
 
 
 
@@ -101,3 +102,7 @@
 6. 그밖에
    - indexing, slicing 지원
    - boolean indexing, fancy indexing 지원
+
+
+7. 활용
+   - .isna().sum().sum() : null 데이터가 한개라도 있는지 확인할 때
