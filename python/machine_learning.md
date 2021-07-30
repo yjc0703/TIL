@@ -39,9 +39,30 @@
 
 
 ### 분류 성능 평가 지표
-   - 정확도(Accuracy)
-   - 오차행렬(Confusion Matrix)
-   - 정밀도(Precision)
-   - 재현율(Recall)
-   - F1 스코어
-   - ROC AUC
+
+   - 오차행렬(Confusion Matrix)  
+
+      |          | Nagative | Positive |
+      | :------: | :------: | :------: |
+      | Nagative |    TN    |    FP    |
+      | Positive |    FN    |    TP    |
+
+   - 정확도(Accuracy)  
+      : 전체 예측한 데이터 건수 중에서 예측과 결과가 동일한 비율  
+
+      $ 정확도 = \frac{TP+TN}{TP+FP+TN+FN} $
+
+   - 정밀도(Precision)  
+      : 예측을 Positive 로 한 대상 중에 실제 값이 Positive 로 일치한 데이터의 비율
+
+      $ 정밀도 = \frac{TP}{TP+FP} $
+
+   - 재현율(Recall)  
+      : 실제 값이 Positive 인 대상 중에 실제 값이 Positive 로 일치한 데이터의 비율
+
+      $ 재현율 = \frac{TP}{TP+FN} $
+
+   - F1 스코어  
+      : 정밀도와 재현율을 결합. 정밀도와 재현율이 어느 한 쪽으로 치우치지 않을 때 상대적으로 높은 값을 가짐
+
+      $ F1 스코어 = \frac{2 * (정밀도 * 재현율)}{정밀도 + 재현율} $
