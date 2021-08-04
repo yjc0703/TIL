@@ -1,5 +1,4 @@
 # basic command
-
 > 리눅스 기본 명령어
 
 
@@ -42,3 +41,18 @@
 
 
 
+
+### 기타
+
+##### man
+- 명령어에 대한 설명
+- `man <command name>`
+
+
+
+##### chmod
+- 파일, 디렉토리에 권한 부여
+- r : 읽기(4)
+- w : 쓰기(2)
+- x : 실행(1)
+- `chmod <rwx number> <file name>`
