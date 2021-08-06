@@ -1,7 +1,7 @@
 # 유용한 라이브러리
 > 파이썬 개발에 유용한 라이브러리들
 
-1. itertools : 반복 형태의 데이터를 처리하기 위한 유용한 기능을 제공
+- itertools : 반복 형태의 데이터를 처리하기 위한 유용한 기능을 제공
    - count : 반복하고자 하는 최대수를 몰라도 step 단위로 값을 반환
       ```python
       from itertools import count
@@ -15,17 +15,14 @@
       20 c
       ```
 
+- heapq : 힙(Heap) 자료구조 제공. 우선순위 큐를 사용하기 위해 활용
 
-2. heapq : 힙(Heap) 자료구조 제공. 우선순위 큐를 사용하기 위해 활용
+- bisect : 이진 탐색 기능을 제공
 
+- collections : 덱(deque), 카운터(counter) 등의 유용한 자료구조를 제공
 
+- math : 필수적인 수학기능 제공
 
-3. bisect : 이진 탐색 기능을 제공
+- nltk : 영어 코퍼스를 토큰화하기 위한 도구들을 제공
 
-
-
-4. collections : 덱(deque), 카운터(counter) 등의 유용한 자료구조를 제공
-
-
-
-5. math : 필수적인 수학기능 제공
+- konlpy : 한글 코퍼스를 토큰화하기 위한 도구들을 제공
